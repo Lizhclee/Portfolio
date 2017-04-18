@@ -18,5 +18,12 @@ clears the display. The enter button doesn't do anyting.
 These are some HTML5 website designs that I have made.
 
 siteprototype is a website prototype using HTML5, CSS, JavaScript and
-PHP that I worked on during COMP 1536. To see the PHP in action, please
+PHP that I worked on during COMP 1536. We were given the site 
+requirements, wireframe diagram, and images, and we built the website
+from there. To see the PHP in action, please
 visit http://students.bcitdev.com/A00966618/lab8/join.html
+
+labquiz is a website that I built in my COMP 1536 lab. I had 1 hour,
+50 minutes to build a website consisting of a home page, about us page,
+and a contact us page that looked like the instructor's screenshots. We
+were given the images, PHP for the form, and the HTML for the home page.
