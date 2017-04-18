@@ -1,0 +1,104 @@
+/* For browsers that do not recognize the header, nav, main, and footer tags */
+header, nav, main, footer {display: block;}
+
+body, html { height: 100%; }
+
+body { font-family: "Lucida Grande", sans-serif;
+	background-color: #F6F1DE;
+	margin: 0;}
+
+/* Header styles */
+header { border-top: solid 10px #6699CC;
+		margin: 0;
+		background-color: #006699;
+		color: #FFFFFF;
+		padding: 10px;
+		position: fixed;
+		top: 0;
+		width: 100%;}
+		
+h1 { background-image: url("../images/logo.gif");
+		background-repeat: no-repeat;
+		background-position: left;
+		padding: 10px 0 10px 55px;
+		width: 715px;
+		margin: auto;
+		font-weight: normal;}
+		
+/* Middle section */
+#wrapper { width: 760px;
+	margin: 100px auto 100px auto;
+	z-index: -1; 
+	padding: 0; }
+	
+/* Navigation */
+#leftcol { width: 210px;
+		float: left;
+		position: fixed;}
+#navbottom { width: 196px;
+		height: 8px;
+		background-image: url("../images/nav_btm.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom; 
+		padding: 0;}
+nav { background-color: #FCF7F3; 
+	font-weight: bold;
+	background-image: url("../images/nav_side.jpg");
+	background-repeat: repeat-y;
+	background-position: right; 
+	width: 196px;
+	margin: auto;}
+nav ul { list-style: inside url("../images/arrow.gif");
+		padding: 4px 10px 0 10px;
+		margin-bottom: 0;}
+nav li {padding-top: 2px;}
+nav a { color: #006699;
+		text-decoration: none; }
+.border { border-bottom: 1px solid #D1CFCD;
+		padding: 2px 0 2px 0;}
+
+/* An image in the left column */
+.picture { display: block;
+	width: 196px;
+	margin: auto;
+	padding-top: 10px;}
+	
+/* Right column (main content) */
+#rightcol { margin: 0 0 100px 220px;
+			width: 520px;
+			border-left: 2px solid #EFE6CE;
+			padding: 0 0 0 20px; 
+			position: fixed;
+			height: 65%;
+			overflow: auto; }
+h2 { color: #006699;
+	font-weight: normal;
+	margin: 10px 0 10px 0;}
+
+h3 { color: #006699;
+	background-image: url("../images/h2.gif");
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 25px;
+	font-weight: normal;}
+			
+.separator { display: block;
+			width: 485px;
+			margin: auto;}
+
+/* Footer styles */
+#footbox { width: 760px;
+	margin: auto;}
+		
+.copyright {text-align: center;
+		font-size: 0.8em; }
+		
+footer { background-color: #EFE6CE;
+		width: 100%;
+		height: 20%;
+		position: fixed; 
+		bottom: 0; }
+		
+/* Error messages */
+.errorMessage { color: red;
+				font-size: small; }

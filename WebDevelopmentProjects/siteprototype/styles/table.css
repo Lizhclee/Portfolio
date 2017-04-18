@@ -1,0 +1,14 @@
+table { border: 1px solid #000000;
+	margin: auto;
+	width: 85%;
+}
+th, td { padding: 5px 15px;
+}
+
+tr:nth-of-type(odd) { background-color: #FFFFFF;
+}
+
+#video { margin: auto;
+width: 460px;
+
+}

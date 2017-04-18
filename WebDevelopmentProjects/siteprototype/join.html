@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CST Web Creations</title>
+		<link rel="stylesheet" href="styles/style4.css">
+		<link rel="stylesheet" href="styles/form.css">
+		
+		<script src="otherfiles/script7.js"></script>
+	</head>
+	
+	<body>
+		
+			<!--header-->
+			<header>
+			<h1>CST Web Creations</h1>
+			</header>
+
+			<!--wrapper div for multiple elements-->
+		<div id="wrapper">
+		
+			<!--left column-->
+			<div id="leftcol">
+				<!--navigation-->
+				<nav>
+					<ul>
+					<li class="border"><a href="">Home</a></li>
+					<li class="border"><a href="">Services</a></li>
+					<li class="border"><a href="#">Portfolio</a></li>
+					<li class="border"><a href="#">Join Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+					</ul>
+					<div id="navbottom"></div>
+
+				</nav>
+				<div class="picture">
+				<img  src="images/img-2.jpg" alt="Image 2" width="196" height="100">
+				</div>
+			</div>
+			<!--main content-->
+			<main id="rightcol">
+				<h2>Who we are</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat 
+				expetenda vim at, verterem eleifend vix eu. Instructior necessitatibus 
+				conclusionemque no mel. Mea ea graecis ullamcorper. Has suas eligendi at. 
+				Pri alia pericula persequeris eu, enim sonet assueverit ut quo. Praesent 
+				abhorreant ex mel, legere numquam eu nam.</p>
+				<img class="separator" src="images/hr.gif" alt="Section separator">
+				<h3>Join us now!</h3>
+				<p>An quo dolorum ponderum, sea aperiam fabulas ut, persius adipisci eum ut.</p>
+				
+				<form 
+					name="join" 
+					id="join" 
+					method="post" 
+					action="otherfiles/login.php"
+					onsubmit="return formValidate()">
+					
+					<div id="itmPosition">
+					
+						<label for="selPosition">
+							<span class="label">Which position are you applying for?</span>
+							<span class="required">*</span>
+						</label>
+						
+						<div id="errPosition"><!--error message--></div>
+						
+						<select 
+							size="1" 
+							name="position" 
+							id="selPosition">
+							
+							<option>&nbsp;</option>
+							<option value="Project Manager">Project Manager</option>
+							<option value="Graphic Designer">Graphic Designer</option>
+							<option value="Web Developer">Web Developer</option>
+							<option value="Database Administrator">Database Administrator</option>
+							
+						</select>
+						
+					</div>
+						
+					<br>
+						
+					<div id="itmPassedWeb">
+					
+						<label for="radPassedWeb_0">
+							<span class="label">Passed COMP 1536?</span>
+							<span class="required">*</span>
+						</label>
+						
+						<div id="errPassedWeb"><!--error message--></div>
+						
+						<input 
+							type="radio" 
+							name="comp1536" 
+							id="radPassedWeb_0">
+								<label for="radPassedWeb_0"><span>Yes</span></label>
+							<br>
+						<input 
+							type="radio" 
+							name="comp1536" 
+							id="radPassedWeb_1">
+								<label for="radPassedWeb_1"><span>No</span></label>
+								
+					</div>
+						
+					<br>
+					
+					<div id="itmStartDate">
+						
+						<label for="txtStartDate_0">
+							<span class="label">Earliest start date?</span>
+							<span class="required">*</span>
+						</label>
+						
+						<div id="errStartDate"><!--error message--></div>
+						
+						<div class="fields">
+							<input 
+								type="text" 
+								size="1" 
+								name="month" 
+								id="txtStartDate_0">
+								&nbsp;/
+							<br>
+							<label for="txtStartDate_0">
+								<span class="prompt">MM</span>
+							</label>
+						</div>
+						
+						<div class="fields">
+							<input 
+								type="text" 
+								size="1" 
+								name="day" 
+								id="txtStartDate_1">
+								&nbsp;/
+							<br>
+							<label for="txtStartDate_1">
+								<span class="prompt">DD</span>
+							</label>
+						</div>
+						
+						<div class="fields">
+							<input 
+								type="text" 
+								size="4" 
+								name="year" 
+								id="txtStartDate_2">
+							<br>
+							<label for="txtStartDate_2">
+								<span class="prompt">YYYY</span>
+							</label>
+						</div>
+						
+					</div>
+						
+					<br>
+						
+						<label for="txtPortfolio">
+							<span class="label">Portfolio URL</span>
+						</label>
+						<br>
+						<input 
+							type="text" 
+							size="58" 
+							name="portfolio" 
+							id="txtPortfolio" 
+							value="http://">
+							
+					<br><br>
+					
+					<div id="itmResume">
+						
+						<label for="filResume">
+							<span class="label">Attach resume</span>
+						</label>
+						
+						<div id="errResume"><!--error message--></div>
+						
+						<input 
+							type="file" 
+							name="resume" 
+							id="filResume">
+							
+					</div>
+							
+					<br>
+					
+					<div id="itmName">
+						
+						<label for="txtFirstName">
+							<span class="label">Name</span>
+							<span class="required">*</span>
+						</label>
+						
+						<div id="errName"><!--error message--></div>
+						
+						
+						<div class="fields">
+							<input 
+								type="text" 
+								size="10" 
+								name="first" 
+								id="txtFirstName">
+							<br>
+							<label for="txtFirstName">
+								<span class="prompt">First</span>
+							</label>
+						</div>
+						
+						<div class="fields">
+							<input 
+								type="text" 
+								size="20" 
+								name="last" 
+								id="txtLastName">
+							<br>
+							<label for="txtLastName">
+								<span class="prompt">Last</span>
+							</label>
+						</div>
+						
+					</div>
+						
+					<br>
+					
+					<div id="itmEmail">
+						
+						<label for="txtEmail">
+							<span class="label">Email address</span>
+							<span class="required">*</span>
+						</label>
+						
+						<div id="errEmail"><!--error message--></div>
+						
+						<input 
+							type="text" 
+							size="58" 
+							name="email" 
+							id="txtEmail">
+							
+					</div>
+							
+					<br>
+					
+					<div id="itmPhone">
+						
+						<label for="txtPhone_0">
+							<span class="label">Phone</span>
+							<span class="required">*</span>
+						</label>
+						
+						<div id="errPhone"><!--error message--></div>
+						
+						<div class="fields">
+							<input 
+								type="text" 
+								size="2"
+								name="ph0" 
+								id="txtPhone_0">
+							&nbsp;-
+							<br>
+							<label for="txtPhone_0">
+								<span class="prompt">(###)</span>
+							</label>
+						</div>
+						
+						<div class="fields">
+							<input 
+								type="text" 
+								size="2" 
+								name="ph1" 
+								id="txtPhone_1">
+							&nbsp;-
+							<br>
+							<label for="txtPhone_1">
+								<span class="prompt">###</span>
+							</label>
+						</div>
+						
+						<div class="fields">
+							<input 
+								type="text" 
+								size="4" 
+								name="ph2" 
+								id="txtPhone_2">
+								<br>
+							<label for="txtPhone_2">
+								<span class="prompt">####</span>
+							</label>
+						</div>
+						
+					</div>
+						
+					<br>
+						
+						<label for="taComments">
+							<span class="additional">Any additional information for us</span>
+						</label>
+						<br>
+						<textarea 
+							cols="50" 
+							rows="6" 
+							name="additional" 
+							id="taComments">
+						</textarea>
+					
+					<br><br>
+					
+					<div id="errSubmit"><!--error message--></div>
+					<input 
+						type="submit" 
+						value="Submit">
+						
+					<br><br>
+				</form>
+				
+			</main>
+		</div>
+		<!--footer-->
+		<footer>
+			<div id="footbox">
+				<p class="copyright">Copyright &copy; 2017 CST Web Creations&nbsp;&nbsp;|&nbsp;&nbsp;Designed by Elizabeth and Neda</p>
+				<!--HTML5 and CSS Validation-->
+				<a href="https://validator.w3.org/check?uri=referer" target="_blank">
+					<img src="images/HTML5Certified.png" 
+					alt="Valid HTML5!" 
+					style="border:0;width:88px;height:31px"></a><br>
+					
+					<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+					<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!" /></a>
+			</div>
+			
+		</footer>
+
+	</body>
+</html>
