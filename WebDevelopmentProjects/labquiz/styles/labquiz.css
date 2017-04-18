@@ -1,0 +1,116 @@
+body {
+	width: 800px;
+	margin: auto;
+}
+#header {
+	background-color: #C0C0C0;
+	background-image: url("../images/compass.gif");
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 80px;
+}
+
+h1 {
+	padding: 20px 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#navigation {
+	width: 100%;
+	background-color: #000000;
+}
+
+#navigation ul {
+	padding: 5px 0;
+	margin: 0;
+}
+
+#navigation li {
+	display: inline;
+}
+
+#navigation a {
+	text-decoration: none;
+	padding: 5px 20px;
+	color: #FFFFFF;
+	border-right: solid 1px #FFFFFF;
+}
+
+#content-container {
+	position: relative;
+}
+
+#section-navigation {
+	float: left;
+	width: 160px;
+}
+
+#section-navigation ul {
+	margin: 0;
+}
+
+#section-navigation li {
+	margin-bottom: 10px;
+}
+
+#section-navigation a {
+	color: #000000;
+	background-color: #C0C0C0;
+	padding-right: 70px;
+}
+
+#aside {
+	width: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+#content {
+	margin-left: 180px;
+	margin-right: 220px;
+	min-height: 250px;
+}
+
+
+#footer {
+	padding: 20px;
+	width: 760px;
+	background-color: #C0C0C0;
+	text-align: right;
+}
+
+form {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#labels {
+	float: left;
+	margin: 0;
+}
+
+#labels li {
+	padding-bottom: 13px;
+}
+
+#fields {
+	margin-left: 140px;
+}
+
+.formfield {
+	width: 160px;
+	margin-bottom: 10px;
+}
+
+.radio {
+	margin-bottom: 10px;
+}
