@@ -1,0 +1,177 @@
+/* Main content padding for appearance */
+
+#slideshow {
+	margin: 0;
+	width: 100%;
+}	
+
+#slideshow img {
+	margin: 0;
+	width: 100vw;
+	height: 80vh;
+}
+
+.hidden {
+	display: none;
+}
+
+.w3-display-container {
+	width: 100%;
+}
+
+/* Image rounding */
+#content img {
+	float: left;
+}
+/* Content alignment */
+.event {
+	overflow: auto;
+}
+
+.textblock {
+	margin-left: 250px;
+}
+
+.event h2 {
+	margin-bottom: 0;
+}
+
+time {
+	font-size: small;
+	font-style: italic;
+}
+
+.event p {
+	text-indent: 40px;
+}
+
+ /* Remove cascade */
+#content hr {
+	background-color: #F2B7A6;
+	border: 0;
+	clear: left;
+	height: 1px;
+}
+
+.mySlides {
+	display: none;
+	-webkit-filter: brightness(1.1);
+}
+.w3-left, .w3-right, .w3-badge {
+	cursor: pointer;
+}
+.w3-badge {
+	height: 20px;
+	width: 20px;
+	padding: 0;
+}
+
+#goleft, #goright {
+	font-size: 30px;
+	color: #9B3417;
+}
+
+.promos {
+	-webkit-filter: brightness(0.85);
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	height: 26vh;
+	position: absolute;
+	width: 100%;
+}
+
+.promos h1 {
+	background: white;
+	color: #9B3417;
+	font-size: large;
+	font-weight: bold;
+	opacity: 0.70;
+	padding: 15px;
+	text-align: center;	
+}
+
+.subBanner {
+	display: flex;
+}
+
+.subBanner img {
+	width: 100%;
+	height: 100%;
+}
+
+.leftbox {
+	flex: 1;
+	position: relative;
+}
+
+.leftbox:hover .overlay {
+	height: 100%;
+	bottom: 0;
+}
+
+.midbox {
+	flex: 1;
+	position: relative;
+}
+
+.midbox:hover .overlay {
+	height: 100%;
+	bottom: 0;
+}
+
+.rightbox {
+	flex: 1;
+	position: relative;
+}
+
+.rightbox:hover .overlay {
+	height: 100%;
+	bottom: 0;
+}
+
+.promos:hover {
+	-webkit-filter: none;
+}
+
+#epic1 {
+	background-image: url(images/eventslices.jpg);
+	background-size: cover;
+	flex: 1;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #9B3417;
+	opacity: 0.9;
+	overflow: hidden;
+	height: 0;
+	transition: 1s ease;
+}
+
+.h2{
+	font-size: 1.5vh;
+}
+
+.text {
+	width: 70%;
+	margin: auto;
+	margin-top: 20px;
+	color: white;
+	font-size: 2.1vh;
+	overflow: auto;
+	height: 250px;
+}
+
+#epic2 {
+	background-image: url(images/eventcups.jpg);
+	background-size: cover;
+}
+
+#epic3 {
+	background-image: url(images/eventcakes.jpg);
+	background-size: cover;
+}
