@@ -1,0 +1,133 @@
+/* Products Exclusive CSS */
+#general {
+	position: relative;
+}
+/* Filter basic appearance */
+/* Fixed position necessary */
+#filter {
+	position: fixed;
+}
+
+#filter ul {
+	list-style-type: none;
+}
+
+#filter li {
+	padding: 10px 0;
+}
+
+#filter .special {
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+h1, h3 {
+	margin-left: 270px;
+	width: 90%;
+}
+
+#products {
+	margin-left: 270px;
+	width: 90%;
+}
+
+/* Picture response */
+.thumbnails {
+	display: inline-block;
+}
+
+.sectionhead {
+	border-bottom: solid 1px #F2B7A6;
+	padding-top: 20px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.thumbnails figure {
+	margin: 0;
+	padding: 5px;
+	position: relative;
+}
+
+figcaption {
+	padding-top: 5px;
+	text-align: center;
+}
+
+/* Tooltip */
+.tooltip {
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	width: 150px;
+	z-index: 2;
+	opacity: inherit;
+}
+
+.tooltip img {
+	border-right: solid 5px #FFFFFF;
+	border-bottom: solid 5px #FFFFFF;
+}
+
+.tooltip .tooltiptext {
+	background-color: #9B3417;
+	color: #F7D0BB;
+	display: inline-block;
+	font-size: 0.85em;
+	left: 24px;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+button {
+	border: none; 
+	background-color: white;
+	padding: 0;
+}
+
+.tleft {
+	float: left;
+	margin-right: 20px;
+}
+
+.tright {
+	overflow: auto;
+}
+
+#wrap {
+	position: absolute;
+}
+
+.errorMessage {
+	color: red;
+	font-size: small;
+}
+
+body {
+	min-height: 110vh;
+}
+
+a{
+	text-decoration: none;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: none;
+}
+
+label {
+	font-weight: normal;
+}
