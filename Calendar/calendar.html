@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		
+		<script>
+			function drawCalendar(date) {
+				var d = new Date(date);
+				var today = new Date();
+				var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+				var weekday = d.getDay(); //check day of week
+				
+				// add header rows
+				var cal = "<tr><td colspan = '7' class='head title'><span id='month'>" + months[d.getMonth()] + " " + d.getFullYear() + "</span></td></tr>";
+				cal += "<tr><td class='head'><span>Sun</span></td>"
+				cal += "<td class='head'><span>Mon</span></td>"
+				cal += "<td class='head'><span>Tues</span></td>"
+				cal += "<td class='head'><span>Wed</span></td>"
+				cal += "<td class='head'><span>Thurs</span></td>"
+				cal += "<td class='head'><span>Fri</span></td>"
+				cal += "<td class='head'><span>Sat</span></td></tr>";
+				
+				cal += "<tr>";
+				
+				// check if first day of month is Sunday
+				if (weekday > 0 && weekday < 7) {
+					cal += "<td colspan = " + weekday + "></td>";
+				}
+				
+				// print first day of month
+				cal += "<td id='day" + d.getDate() + "'><span class='day'>" + d.getDate() + "</span></td>";
+				d.setDate(d.getDate() + 1);
+				
+				// print the rest of the days
+				while (d.getDate() > 1) {
+					// if the day of the week is Sunday, place on next row
+					if (d.getDay() == 0) {
+						cal += "</tr><tr>";
+					}
+					
+					cal += "<td id='day" + d.getDate() + "'><span class='day'>" + d.getDate() + "</span></td>";
+					d.setDate(d.getDate() + 1);
+				}
+				
+				// fill rest of last row with an empty box
+				if (d.getDay() > 0 && d.getDay() <= 6) {
+					cal += "<td colspan = " + (7 - d.getDay()) + "></td>";
+				}
+				
+				cal += "</tr>";
+				
+				// print out the month
+				document.getElementById("calendar").innerHTML = cal;
+				
+				// highlight today's date
+				if (d.getMonth() - 1 == today.getMonth() && d.getFullYear() == today.getFullYear()) {
+					document.getElementById("day" + today.getDate()).style.backgroundColor = "#006600";
+					document.getElementById("day" + today.getDate()).style.color = "#FFFFFF";
+				}
+				
+				// grey out past days
+				d.setDate(d.getDate() - 1);
+				for (var i = d.getDate(); i >=1; i--) {
+					if (d.getFullYear() < today.getFullYear() || 
+					d.getFullYear() == today.getFullYear() && d.getMonth() < today.getMonth() ||
+					d.getFullYear() == today.getFullYear() && d.getMonth() == today.getMonth() && i < today.getDate()) {
+						document.getElementById("day" + i).style.backgroundColor = "#CCCCCC";
+					}
+				}
+			}
+			
+			// upon first launch, show the current month
+			function currentMonth() {
+				var d = new Date();
+				d.setDate(1);
+				drawCalendar(d);
+			}
+			
+			// show the previous month
+			function calculatePrev() {
+				var current = document.getElementById("month").innerHTML;
+				var e = new Date(current);
+				
+				e.setMonth(e.getMonth() - 1);
+				
+				drawCalendar(e);
+			}
+			
+			// show the next month
+			function calculateNext() {
+				var current = document.getElementById("month").innerHTML;
+				var e = new Date(current);
+				
+				e.setMonth(e.getMonth() + 1);
+				
+				drawCalendar(e);
+			}
+			
+		onload=currentMonth;
+		</script>
+		
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+			td { 
+				height: 45px;
+				width: 45px;
+				border: solid 1px #006600;
+				margin: 0;
+				text-align: center;
+				color: #000000;
+			}
+			.head {
+				background-color: #006600;
+				color: #FFFFFF;
+			}
+			.title {
+				font-size: 1.3em;
+			}
+			.today {
+				color: #006600;
+				font-weight: bold;
+			}
+			.past {
+				color: #CCCCCC;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<button onclick="calculatePrev()">Previous</button>
+		<button onclick="calculateNext()">Next</button>
+		<table id="calendar">
+		</table>
+		
+		<p>Note: today's date is highlighted <span class="today">green</span>. Past dates are highlighted <span class="past">grey</span>.</p>
+	</body>
+</html>
