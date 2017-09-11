@@ -17,10 +17,8 @@ clear button, and an enter button. At the top of the window, the
 numbers that the user has clicked are displayed. The clear button 
 clears the display. The enter button doesn't do anyting.
 
-**MorphingCircle.jar** (WARNING! FLASHING COLOURS!) is an interactive 
-graphics program with a coloured circle in the centre. The circle changes 
-colour depending on which quadrant the mouse cursor is in. 
-WARNING: flashing colours!
+**RockPaperScissors.jar** is an interactive game of rock-paper-scissors
+between the user and the computer.
 
 ## WebDevelopmentProjects
 These are some HTML5 website designs that I have made.
