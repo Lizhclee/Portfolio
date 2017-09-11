@@ -3,9 +3,7 @@ Some programming projects that I have been working on in class and in
 my spare time.
 
 ## Calendar
-I wrote a simple calendar using JavaScript. No database is necessary to 
-storethe dates; all dates are calculated to show on the appropriate day 
-of the week.
+A very lightweight calendar written in JavaScript.
 
 ## JavaProjects
 These are some Java programs that were suggested in the Programming 
