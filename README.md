@@ -23,8 +23,14 @@ between the user and the computer.
 ## WebDevelopmentProjects
 These are some HTML5 website designs that I have made.
 
+**Pocket Pantry** is a meal-planning web app designed for mobile devices.
+View the site here:
+http://students.bcitdev.com/A01005523/comp2910/PocketPantry/sign_in.html
+
 **madeleines** is a term project that I built with 3 of my classmates in
 COMP 1536. It is a website for a fictional patisserie named Madeleine's.
+View the site here: 
+http://students.bcitdev.com/A01005523/comp1536/Madeleines/views/index.php
 
 **siteprototype** is a website prototype using HTML5, CSS, JavaScript and
 PHP that I worked on during COMP 1536. We were given the site 
