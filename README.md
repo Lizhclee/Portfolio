@@ -6,8 +6,9 @@ my spare time.
 A very lightweight calendar written in JavaScript.
 
 ## JavaProjects
-These are some Java programs that were suggested in the Programming 
-Projects sections of Java Software Solutions by Lewis & Loftus.
+
+**DiceRoll.jar** is a graphical user interface where the user can
+roll two 6-sided dice.
 
 **BarGraph.jar** is a graphical user interface that draws a bar graph
 with several bars of random height.
@@ -21,7 +22,6 @@ clears the display. The enter button doesn't do anyting.
 between the user and the computer.
 
 ## WebDevelopmentProjects
-These are some HTML5 website designs that I have made.
 
 **Pocket Pantry** is a meal-planning web app designed for mobile devices.
 View the site here:
