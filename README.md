@@ -10,9 +10,6 @@ A very lightweight calendar written in JavaScript.
 **DiceRoll.jar** is a graphical user interface where the user can
 roll two 6-sided dice.
 
-**BarGraph.jar** is a graphical user interface that draws a bar graph
-with several bars of random height.
-
 **Keypad.jar** is a graphical user interface containing number buttons, a 
 clear button, and an enter button. At the top of the window, the 
 numbers that the user has clicked are displayed. The clear button 
