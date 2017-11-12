@@ -7,8 +7,8 @@ A very lightweight calendar written in JavaScript.
 
 ## JavaProjects
 
-**DiceRoll.jar** is a graphical user interface where the user can
-roll two 6-sided dice.
+**Pig.jar** is a dice game utilizing Swing components, allowing the user
+to play against the computer.
 
 **Keypad.jar** is a graphical user interface containing number buttons, a 
 clear button, and an enter button. At the top of the window, the 
