@@ -16,6 +16,9 @@ import javax.swing.JPanel;
  * <p>This class initializes a player (the user) and an opponent 
  * (the computer) for a game of Pig.</p>
  * 
+ * <p>Game and programming idea from Programming Project 5.11 of 
+ * Java Software Solutions, 8th ed. by Lewis & Loftus.</p>
+ * 
  * @author Elizabeth Lee
  * @version 2.0
  *
@@ -162,6 +165,13 @@ public class Pig {
         die1.roll();
         die2.roll();
         System.out.println("Die 1: " + die1.getFace() + "\nDie 2: " + die2.getFace());
+    }
+    
+    /**
+     * <p>Updates the marker for whose turn it currently is.</p>
+     */
+    public void switchPlayer() {
+        playerTurn = !playerTurn;
     }
     
     /**
