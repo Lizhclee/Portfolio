@@ -2,9 +2,6 @@
 Some programming projects that I have been working on in class and in
 my spare time.
 
-## Calendar
-A very lightweight calendar written in JavaScript.
-
 ## JavaProjects
 
 **Pig.jar** is a dice game utilizing Swing components, allowing the user
@@ -17,6 +14,15 @@ clears the display. The enter button doesn't do anyting.
 
 **RockPaperScissors.jar** is an interactive game of rock-paper-scissors
 between the user and the computer.
+
+## JavaScript Projects
+
+**Calendar**
+A very lightweight calendar written in JavaScript.
+
+**Filter**
+A fake forum posting that filters "bad words" in the reply you typed into
+"good words".
 
 ## WebDevelopmentProjects
 
