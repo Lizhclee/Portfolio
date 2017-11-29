@@ -40,11 +40,11 @@ function postReply() {
 
 function filterText(text) {
 	var disallowed = [
-		[/star wars+/ig, "Danganronpa"],
-		[/luke+ ?skywalker+/ig, "Makoto Naegi"],
-		[/(princess ?)?leia+/ig, "Kyoko Kirigiri"],
-		[/han+ ?solo+/ig, "Mondo Owada"],
-		[/1138+/ig, "11037"]
+		[/star ?wars/ig, "Danganronpa"],
+		[/luke ?skywalker/ig, "Makoto Naegi"],
+		[/(princess ?)?leia/ig, "Kyoko Kirigiri"],
+		[/han ?solo/ig, "Mondo Owada"],
+		[/1138/ig, "11037"]
 	];
 	
 	for (var i = 0; i < disallowed.length; i++) {
