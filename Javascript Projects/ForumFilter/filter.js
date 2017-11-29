@@ -7,7 +7,7 @@ function postReply() {
 	var username = document.createElement("span");
 	var timestamp = document.createElement("span");
 	var message;
-	var text = document.getElementById("reply").value.split("\n");
+	var text = document.getElementById("reply").value;
 	var date = new Date();
 	
 	img.setAttribute("src", "user.png");
@@ -23,7 +23,7 @@ function postReply() {
 	th.appendChild(timestamp);
 	row1.appendChild(th);
 	
-	text = filterText(text);
+	text = filterText(text).split("\n");
 	
 	for (var i = 0; i < text.length; i++) {
 		message = document.createElement("p");
@@ -39,14 +39,16 @@ function postReply() {
 }
 
 function filterText(text) {
-	for (var i = 0; i < text.length; i++) {
-		text[i] = text[i].replace(/star wars+/ig, "Danganronpa");
-		text[i] = text[i].replace(/luke+/ig, "Makoto");
-		text[i] = text[i].replace(/skywalker+/ig, "Naegi");
-		text[i] = text[i].replace(/(princess ?)?leia+/ig, "Kyoko Kirigiri");
-		text[i] = text[i].replace(/han+/ig, "Mondo");
-		text[i] = text[i].replace(/solo+/ig, "Owada");
-		text[i] = text[i].replace(/1138+/ig, "11037");
+	var disallowed = [
+		[/star wars+/ig, "Danganronpa"],
+		[/luke+ ?skywalker+/ig, "Makoto Naegi"],
+		[/(princess ?)?leia+/ig, "Kyoko Kirigiri"],
+		[/han+ ?solo+/ig, "Mondo Owada"],
+		[/1138+/ig, "11037"]
+	];
+	
+	for (var i = 0; i < disallowed.length; i++) {
+		text = text.replace(disallowed[i][0], disallowed[i][1]);
 	}
 	
 	return text;
